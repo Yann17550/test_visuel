@@ -26,7 +26,7 @@ body {
    - hauteur = 80px
    - fond gris clair + bordure blanche
 ========================================= */
-.container-fixe {
+.container-produit {
   width: 100vw;              /* 100% de la largeur de la fenêtre */
   height: 80px;              /* hauteur fixe */
   background: #f3f4f6;       /* gris clair */
