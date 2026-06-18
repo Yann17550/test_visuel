@@ -1,13 +1,13 @@
 /* =========================================
    RESET DE BASE
-   - On enlève marges / padding par défaut
+   - * c'est pour dire que TOUT les éléments du documents sont soumis aux modifications
    - On active box-sizing: border-box pour
      que width/height incluent bien les bordures
 ========================================= */
 * {
   box-sizing: border-box;
-  margin: 20;
-  padding: 10;
+  margin: 20; /* Bord extérieurs*/
+  padding: 10; /* bord interieur*/
 }
 
 /* =========================================
