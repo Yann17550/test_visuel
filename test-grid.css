@@ -6,8 +6,8 @@
 ========================================= */
 * {
   box-sizing: border-box;
-  margin: 20 px; /* Bords extérieurs*/
-  padding: 10 px; /* bords interieurs*/
+  margin: 0 px; /* Bords extérieurs*/
+  padding: 0 px; /* bords interieurs*/
 }
 
 /* =========================================
