@@ -44,7 +44,19 @@ body {
 .ligne2 {
   height: 40px;                      /* 80px / 2 = 40px */
 }
+/* Texte à l'intérieur des blocs de ligne 1 et 2 */
+.ligne1 > div,
+.ligne2 > div {
+  display: flex;              /* pour centrer le texte dans le bloc */
+  align-items: center;        /* centre verticalement */
+  justify-content: center;    /* centre horizontalement */
 
+  font-size: 12px;
+
+  white-space: nowrap;        /* pas de retour à la ligne */
+  overflow: hidden;           /* ce qui dépasse est caché */
+  text-overflow: ellipsis;    /* affiche "..." si le texte est trop long */
+}
 /* Couleur de fond pour chaque ligne (optionnel) */
 .ligne1 {
   background: #e5e7eb;
@@ -71,4 +83,4 @@ body {
 .bloc2-1 { background: #dcfce7; }   /* vert très clair */
 .bloc2-2 { background: #e0f2fe; }   /* bleu très clair */
 .bloc2-3 { background: #ede9fe; }   /* violet très clair */
-.bloc1-4 { background: #fef9c3; }   /* jaune très clair */
+.bloc2-4 { background: #fef9c3; }   /* jaune très clair */
