@@ -43,17 +43,20 @@ body {
 .ligne1,
 .ligne2 {
   height: 40px;                      /* 80px / 2 = 40px */
-  display: grid;                     /* on active une grille */
-  /* grid-template-columns: 1fr 1fr 1fr;     3 colonnes de même largeur */
-   grid-template-columns: 30% 35% 35%; /* colonnes de largeur différente */
 }
 
 /* Couleur de fond pour chaque ligne (optionnel) */
 .ligne1 {
   background: #e5e7eb;
+     display: grid;                     /* on active une grille */
+  /* grid-template-columns: 1fr 1fr 1fr;     3 colonnes de même largeur */
+   grid-template-columns: 30% 70%; /* colonnes de largeur différente */
 }
 .ligne2 {
   background: #d1d5db;
+  display: grid;                     /* on active une grille */
+  /* grid-template-columns: 1fr 1fr 1fr;     3 colonnes de même largeur */
+   grid-template-columns: 15% 15% 35% 35%; /* colonnes de largeur différente */
 }
 
 /* =========================================
@@ -61,7 +64,6 @@ body {
 ========================================= */
 .bloc1-1 { background: #fee2e2; }   /* rouge très clair */
 .bloc1-2 { background: #ffedd5; }   /* orange très clair */
-.bloc1-3 { background: #fef9c3; }   /* jaune très clair */
 
 /* =========================================
    BLOCS DE LA LIGNE 2
@@ -69,3 +71,4 @@ body {
 .bloc2-1 { background: #dcfce7; }   /* vert très clair */
 .bloc2-2 { background: #e0f2fe; }   /* bleu très clair */
 .bloc2-3 { background: #ede9fe; }   /* violet très clair */
+.bloc1-4 { background: #fef9c3; }   /* jaune très clair */
