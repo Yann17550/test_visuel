@@ -30,33 +30,31 @@ body {
    - contenu centré (juste pour le confort visuel)
 ========================================= */
 .container-fixe {
-  /* Largeur :
-     100vw = 100% de la largeur de la fenêtre (viewport width)
-     -> le conteneur s'étend d'un bord à l'autre de l'écran */
-  width: 100vw;
-
-  /* Hauteur :
-     valeur fixe en pixels
-     -> le conteneur fera TOUJOURS 80px de haut,
-        quelle que soit la taille du texte ou de l'écran */
-  height: 80px;
-
-  /* Couleur de fond gris clair pour visualiser le bloc */
-  background: #f3f4f6;
-
-  /* Bordure grise claire autour du bloc pour mieux voir ses limites */
-  border: 1px solid #ffffff;
+  width: 100vw;                     /* Largeur:100vw = 100% de la largeur de la fenêtre*/
+  height: 80px;                     /* Hauteur */
+  background: #f3f4f6;             /* Couleur de fond gris clair*/
+  border: 1px solid #ffffff;       /* Bordure grise claire */
 /* Deux lignes internes, chacune prend la moitié de la hauteur */
 .ligne1,
 .ligne2 {
-  height: 40px;             /* 80px / 2 = 40px chacun */
+height: 40px;                      /* hauteur*/
+display: grid;                     /* on active une grille */
+grid-template-columns: 1fr 1fr 1fr;/* 3 colonnes de même largeur */
 }
 
-/* Couleurs différentes pour bien les distinguer visuellement */
 .ligne1 {
   background: #e5e7eb;      /* gris un peu plus foncé */
 }
-
 .ligne2 {
   background: #d1d5db;      /* encore un peu plus foncé */
 }
+/* Ligne 1 */
+.bloc1-1 { background: #fee2e2; }   /* rouge très clair */
+.bloc1-2 { background: #ffedd5; }   /* orange très clair */
+.bloc1-3 { background: #fef9c3; }   /* jaune très clair */
+
+/* Ligne 2 */
+.bloc2-1 { background: #dcfce7; }   /* vert très clair */
+.bloc2-2 { background: #e0f2fe; }   /* bleu très clair */
+.bloc2-3 { background: #ede9fe; }   /* violet très clair */
+   
