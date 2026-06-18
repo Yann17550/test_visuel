@@ -46,3 +46,17 @@ body {
 
   /* Bordure grise claire autour du bloc pour mieux voir ses limites */
   border: 1px solid #ffffff;
+/* Deux lignes internes, chacune prend la moitié de la hauteur */
+.ligne1,
+.ligne2 {
+  height: 40px;             /* 80px / 2 = 40px chacun */
+}
+
+/* Couleurs différentes pour bien les distinguer visuellement */
+.ligne1 {
+  background: #e5e7eb;      /* gris un peu plus foncé */
+}
+
+.ligne2 {
+  background: #d1d5db;      /* encore un peu plus foncé */
+}
