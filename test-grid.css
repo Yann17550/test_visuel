@@ -44,7 +44,8 @@ body {
 .ligne2 {
   height: 40px;                      /* 80px / 2 = 40px */
   display: grid;                     /* on active une grille */
-  grid-template-columns: 1fr 1fr 1fr;/* 3 colonnes de même largeur */
+  /* grid-template-columns: 1fr 1fr 1fr;     3 colonnes de même largeur */
+   grid-template-columns: 30% 35% 35%; /* colonnes de largeur différente */
 }
 
 /* Couleur de fond pour chaque ligne (optionnel) */
