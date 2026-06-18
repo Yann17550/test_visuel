@@ -1,19 +1,19 @@
 /* =========================================
    RESET DE BASE
-   - * c'est pour dire que TOUT les éléments du documents sont soumis aux modifications
-   - On active box-sizing: border-box pour
-     que width/height incluent bien les bordures
+   - * = tous les éléments du document
+   - box-sizing: border-box :
+     la bordure est comptée dans width/height
 ========================================= */
 * {
   box-sizing: border-box;
-  margin: 0 px; /* Bords extérieurs*/
-  padding: 0 px; /* bords interieurs*/
+  margin: 0;   /* bords extérieurs */
+  padding: 0;  /* bords intérieurs */
 }
 
 /* =========================================
    STYLE GLOBAL DU BODY
    - Police "système" (propre sur mobile)
-   - Fond blanc (ne joue pas sur notre conteneur)
+   - Fond foncé pour bien voir le conteneur
 ========================================= */
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -21,40 +21,50 @@ body {
 }
 
 /* =========================================
-   CONTENEUR FIXE
-   Objectif :
-   - largeur = 100% de la fenêtre visible (viewport)
-   - hauteur = fixe (ici 80px)
-   - fond gris clair pour bien voir le bloc
-   - petite bordure grise pour délimiter le bloc
-   - contenu centré (juste pour le confort visuel)
+   CONTENEUR FIXE (PARENT)
+   - largeur = 100% de la fenêtre
+   - hauteur = 80px
+   - fond gris clair + bordure blanche
 ========================================= */
 .container-fixe {
-  width: 100vw;                     /* Largeur:100vw = 100% de la largeur de la fenêtre*/
-  height: 80px;                     /* Hauteur */
-  background: #f3f4f6;             /* Couleur de fond gris clair*/
-  border: 1px solid #ffffff;       /* Bordure grise claire */
-/* Deux lignes internes, chacune prend la moitié de la hauteur */
-.ligne1,
-.ligne2 {
-height: 40px;                      /* hauteur*/
-display: grid;                     /* on active une grille */
-grid-template-columns: 1fr 1fr 1fr;/* 3 colonnes de même largeur */
+  width: 100vw;              /* 100% de la largeur de la fenêtre */
+  height: 80px;              /* hauteur fixe */
+  background: #f3f4f6;       /* gris clair */
+  border: 1px solid #ffffff; /* bordure blanche */
 }
 
+/* =========================================
+   LIGNES INTERNES (ENFANTS DIRECTS)
+   - ligne1 et ligne2 sont à l'intérieur
+     de .container-fixe
+   - chacune fait la moitié de la hauteur
+   - chacune est une grille à 3 colonnes
+========================================= */
+.ligne1,
+.ligne2 {
+  height: 40px;                      /* 80px / 2 = 40px */
+  display: grid;                     /* on active une grille */
+  grid-template-columns: 1fr 1fr 1fr;/* 3 colonnes de même largeur */
+}
+
+/* Couleur de fond pour chaque ligne (optionnel) */
 .ligne1 {
-  background: #e5e7eb;      /* gris un peu plus foncé */
+  background: #e5e7eb;
 }
 .ligne2 {
-  background: #d1d5db;      /* encore un peu plus foncé */
+  background: #d1d5db;
 }
-/* Ligne 1 */
+
+/* =========================================
+   BLOCS DE LA LIGNE 1
+========================================= */
 .bloc1-1 { background: #fee2e2; }   /* rouge très clair */
 .bloc1-2 { background: #ffedd5; }   /* orange très clair */
 .bloc1-3 { background: #fef9c3; }   /* jaune très clair */
 
-/* Ligne 2 */
+/* =========================================
+   BLOCS DE LA LIGNE 2
+========================================= */
 .bloc2-1 { background: #dcfce7; }   /* vert très clair */
 .bloc2-2 { background: #e0f2fe; }   /* bleu très clair */
 .bloc2-3 { background: #ede9fe; }   /* violet très clair */
-   
